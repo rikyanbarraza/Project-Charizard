@@ -1,2 +1,2 @@
 # Bara Kläder
-Examensarbete Tim &amp; Victor WIE20G
+Examensarbete Tim Benjaminson &amp; Victor Barraza WIE20G
