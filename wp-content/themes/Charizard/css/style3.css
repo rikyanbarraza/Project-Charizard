@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    max-width: 1000px;
+    
+}
+.containerOneBigFourSmall{
+margin-top: 20px;
+display: flex;
+justify-content: space-around;
+
+}
+.bigItem{
+    width: 400px;
+    height: 600px;
+    background-color: aqua;
+}
+.twoByTwoRow{
+    display:flex;
+    flex-direction: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.itemOne{
+    width: 150px;
+    height: 280px;
+    background-color: aquamarine;
+}
+.itemTwo{
+    width: 150px;
+    height: 280px;
+    background-color: blue;
+}
+.itemThree{
+    width: 150px;
+    height: 280px;
+    background-color: green;
+}
+.itemFour{
+    width: 150px;
+    height: 280px;
+    background-color: red;
+}
+.containerFourSmallRow{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.heroSection{
+    width: auto;
+    height: 400px;
+    margin-top: 20px;
+    background-color: black;
+}
+.rubrik{
+    display: flex;
+    justify-content: space-evenly;
+}
