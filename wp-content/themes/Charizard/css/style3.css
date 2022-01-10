@@ -1,60 +1,85 @@
-*{
-    box-sizing: border-box;
+html{
+    margin:0!important;
 }
-main{
-    max-width: 1000px;
-    
+body
+{
+text-align: left;
 }
-.containerOneBigFourSmall{
-margin-top: 20px;
-display: flex;
-justify-content: space-around;
+#sidebar_right
+{
+border-left: 1px solid black;
+}
+.header-logo {
+    text-align: center;
+}
+.header-logo img {
+    height: 45px;
+}
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 35px;
+    color: #aaa;
+    text-align: center;
+}
 
+.page-title
+{
+font-size: 120em;
+font-family: verdana;
+font-weight: bold;
 }
-.bigItem{
-    width: 400px;
-    height: 600px;
-    background-color: aqua;
+#main {
+    margin-bottom: 50px;
 }
-.twoByTwoRow{
-    display:flex;
-    flex-direction: nowrap;
-    flex-direction: column;
-    justify-content: space-around;
+a {
+    color: #34393e;
+    text-decoration: none;
 }
-.itemOne{
-    width: 150px;
-    height: 280px;
-    background-color: aquamarine;
+.woocommerce ul.products li.product .price {
+    color: #77a464;
+    display: block;
+    font-weight: 400;
+    margin-bottom: .5em;
+    font-size: 1.2em;
 }
-.itemTwo{
-    width: 150px;
-    height: 280px;
-    background-color: blue;
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+    font-size:1.5em;
+    }
+.woocommerce nav.woocommerce-pagination ul{
+    border:none;
+    }
+    .woocommerce .woocommerce-pagination ul.page-numbers li, .woocommerce-page .woocommerce-pagination ul.page-numbers li {
+    display: inline-block;
+    margin: 5px;
 }
-.itemThree{
-    width: 150px;
-    height: 280px;
-    background-color: green;
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: #337ab7;
+    color: #fff;
+    padding: 12px;
 }
-.itemFour{
-    width: 150px;
-    height: 280px;
-    background-color: red;
+.woocommerce-pagination ul.page-numbers a.page-numbers {
+    color: #444;
+    padding: 12px;
+    margin: 0px;
+    background: #ddd;
 }
-.containerFourSmallRow{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#footer {
+    width: 100%;
+    border-top: 1px #a2a2a2 solid;
+    text-align: center;
+    padding: 40px;
+    background: #eee;
 }
-.heroSection{
-    width: auto;
-    height: 400px;
-    margin-top: 20px;
+#footer h1 {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#footerTemp {
     background-color: black;
+    height: 10vh;
+    width: auto;
 }
-.rubrik{
-    display: flex;
-    justify-content: space-evenly;
+.footerTemp {
+   
 }
