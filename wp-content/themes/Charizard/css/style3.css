@@ -4,11 +4,7 @@ html{
 }
 body
 {
-<<<<<<< HEAD
 text-align: left;
-=======
-text-align: center;
->>>>>>> parent of c525498 (delete)
 }
 #sidebar_right
 {
@@ -67,11 +63,7 @@ a {
     margin: 0px;
     background: #ddd;
 }
-<<<<<<< HEAD
 /* ------- Hidde the products under shopping cart -------- */
-=======
-/* ------- Hidde the products under shopping cart ------- */
->>>>>>> parent of c525498 (delete)
 
 .columns-3 {
     display: none;
