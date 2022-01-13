@@ -34,9 +34,5 @@ function register_menu()
     register_nav_menu('header-menu', 'Header Menu');
 }
 add_action('after_setup_theme', 'register_menu', 'customtheme_add_woocommerce_support');
-<<<<<<< HEAD
-
-=======
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
->>>>>>> parent of c525498 (delete)
 ?>
