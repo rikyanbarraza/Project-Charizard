@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'charizardone' );
 
 /** MySQL-databasens användarnamn */
-define( 'DB_USER', 'tim_admin' );
+define( 'DB_USER', 'admin_tim' );
 
 /** MySQL-databasens lösenord */
-define( 'DB_PASSWORD', '[xa5eUM^Xucc?27' );
+define( 'DB_PASSWORD', 'Sk4SkQxgh3FILVukHyK@1LHD' );
 
 /** MySQL-server */
 define( 'DB_HOST', 'localhost' );
