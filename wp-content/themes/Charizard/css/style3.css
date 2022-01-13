@@ -80,3 +80,15 @@ a {
     height: 10vh;
     width: auto;
 }
+/* ------- Hidde the products under shopping cart ------- */
+
+.columns-3 {
+    display: none;
+}
+.woocommerce-result-count{
+    display: none;
+}
+.woocommerce-ordering{
+    display: none;
+}
+/* ------------------------------------------------------ */
