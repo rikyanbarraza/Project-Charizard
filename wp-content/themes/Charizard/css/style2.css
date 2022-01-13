@@ -1,4 +1,6 @@
 /* ------------------ shop single product --------------- */
+
+
 #body
 {
 text-align: center;
@@ -10,3 +12,4 @@ text-align: center;
 .product_meta {
     display: none;
 }
+

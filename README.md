@@ -1,2 +1,2 @@
-# Project-Charizard
-Examensarbete Tim &amp; Victor WIE20G
+# Bara Kläder
+Examensarbete Tim Benjaminson &amp; Victor Barraza WIE20G
