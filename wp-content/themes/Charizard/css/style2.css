@@ -1,0 +1,12 @@
+/* ------------------ shop single product --------------- */
+#body
+{
+text-align: center;
+}
+#main
+{
+text-align: center;
+}
+.product_meta {
+    display: none;
+}
