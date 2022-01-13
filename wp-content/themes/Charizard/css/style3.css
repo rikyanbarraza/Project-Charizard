@@ -1,3 +1,4 @@
+/* --------------------- shop css ----------------------- */
 html{
     margin:0!important;
 }
@@ -61,24 +62,6 @@ a {
     padding: 12px;
     margin: 0px;
     background: #ddd;
-}
-#footer {
-    width: 100%;
-    border-top: 1px #a2a2a2 solid;
-    text-align: center;
-    padding: 40px;
-    background: #eee;
-}
-#footer h1 {
-    color: #aaa;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-#footerTemp {
-    background-color: black;
-    height: 10vh;
-    width: auto;
 }
 /* ------- Hidde the products under shopping cart ------- */
 
