@@ -3,7 +3,7 @@ html{
 }
 body
 {
-text-align: left;
+text-align: center;
 }
 #sidebar_right
 {
@@ -80,6 +80,12 @@ a {
     height: 10vh;
     width: auto;
 }
-.footerTemp {
-   
+.columns-3 {
+    display: none;
+}
+.woocommerce-result-count{
+    display: none;
+}
+.woocommerce-ordering{
+    display: none;
 }
