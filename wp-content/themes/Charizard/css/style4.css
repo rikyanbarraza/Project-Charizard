@@ -1,0 +1,91 @@
+/* ----------------------------- cart styling -------------------- */
+
+/** image at left. */
+ul .product-thumbnail {
+	height: 225px;
+	width: 300px;
+	display: inline-block;
+}
+ul .product-thumbnail img {
+	max-width: none;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	border: 1px solid #ebebeb;
+}
+
+/** item details at right. */
+ul .cart-item-details {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 24px;
+	width: 100%;
+}
+
+/** no bullets on item list. */
+ul.woocommerce-cart-form__contents {
+	list-style: none;
+	padding-left: 0;
+}
+
+/** wrapper: color, margin. */
+li.woocommerce-cart-form__cart-item {
+	display: flex;
+	background-color: #fafafa;
+	padding: 36px;
+	padding-bottom: 24px;
+	margin-bottom: 30px;
+}
+
+/** item details: no spacing between elements. */
+ul .cart-item-details>* {
+	margin: 0;
+}
+
+/** "update cart" on each item (right side). */
+ul .product-quantity .quantity {
+	display: inline-block;
+}
+ul .product-quantity button {
+	float: right;
+}
+
+/** cart totals: fixed at right with "sticky". */
+#wrap_all, #content { /** parents need to be "overflow: visible". */
+	overflow: visible;
+}
+.woocommerce { /** wrapper needs to be flex. */
+	max-width: none !important;
+}
+.cart-collaterals { /** "sticky". */
+	position: sticky;
+	display: inline-block;
+	vertical-align: top;
+	top: 0;
+	width: 400px !important;
+}
+.cart_totals { /** cart totals width. */
+	float: left;
+	width: 100% !important;
+}
+.woocommerce-cart-form { /** items width. */
+	display: inline-block;
+	width: calc(100% - 435px);
+	padding-right: 35px;
+}
+#containerCart{
+    background-color: #f3f3f3;
+}
+.woocommerce a.button.alt{
+	background-color: #ffffff;
+	color: black;
+	font-weight: lighter;
+	border-width: 2px;
+	border-style: solid;
+	border-color: darkgray;
+}
+.product-name{
+	font-style: Montserrat-bold;
+	font-weight: bold;
+}
+
