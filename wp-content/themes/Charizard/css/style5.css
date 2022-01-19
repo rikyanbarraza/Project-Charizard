@@ -1,0 +1,27 @@
+/* ----------------------------- Checkout styling -------------------- */
+.checkoutContainer{
+    background-color: #f3f3f3;
+}
+.woocommerce-form-coupon-toggle{
+    background-color: #ffffff;
+	color: black;
+	font-weight: lighter;
+	border-width: 4px;
+	border-style: solid;
+	border-color: darkgray;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.woocommerce-info{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    border-top-color:#f3f3f3;
+    
+}
+.woocommerce-info::before{
+    content:none;
+}

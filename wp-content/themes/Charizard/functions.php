@@ -8,6 +8,7 @@ function add_theme_scripts()
     wp_enqueue_style('style2', get_template_directory_uri() . '/css/style2.css');
     wp_enqueue_style('style3', get_template_directory_uri() . '/css/style3.css');
     wp_enqueue_style('style4', get_template_directory_uri() . '/css/style4.css');
+	wp_enqueue_style('style5', get_template_directory_uri() . '/css/style5.css');
     
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
@@ -89,8 +90,5 @@ function rename_coupon_label($err, $err_code=null, $something=null){
 
 	return $err;
 }
-
-
-// Tabort meddelande
 
 ?>

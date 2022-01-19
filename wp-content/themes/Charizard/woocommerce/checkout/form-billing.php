@@ -18,6 +18,7 @@
 
 defined( 'ABSPATH' ) || exit;
 ?>
+<div class="checkoutContainer">
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
@@ -71,4 +72,5 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php do_action( 'woocommerce_after_checkout_registration_form', $checkout ); ?>
 	</div>
+</div>	
 <?php endif; ?>
