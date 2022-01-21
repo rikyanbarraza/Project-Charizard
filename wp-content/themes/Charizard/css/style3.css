@@ -3,7 +3,7 @@ html{
 }
 body
 {
-
+text-align: center;
 }
 #sidebar_right
 {
@@ -73,13 +73,4 @@ a {
     color: #aaa;
     font-size: 30px;
     font-weight: 500;
-}
-.columns-3 {
-    display: none;
-}
-.woocommerce-result-count{
-    display: none;
-}
-.woocommerce-ordering{
-    display: none;
 }

@@ -50,3 +50,12 @@ font-size: 20px;
 .checkoutContainerProduct{
     background-color:#f3f3f3;
 }
+#shipping_phone_field {
+    display: none;
+}
+.klarna-checkout-select-other-wrapper {
+    display: none;
+}
+#klarna-checkout-select-other{
+    display: none;
+}
