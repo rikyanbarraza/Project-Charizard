@@ -1,0 +1,52 @@
+/* ----------------------------- Checkout styling -------------------- */
+.checkoutContainer{
+    background-color: #f3f3f3;
+}
+.woocommerce-form-coupon-toggle{
+    background-color: #ffffff;
+	color: black;
+	font-weight: lighter;
+	border-width: 4px;
+	border-style: solid;
+	border-color: darkgray;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.woocommerce-info{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    border-top-color:#f3f3f3;
+    
+}
+.woocommerce-info::before{
+    content:none;
+}
+.woocommerce{
+    font-size: 1.2em;
+}
+.ts-product-image{
+width: 150px; 
+height: 150px; 
+display: inline-block; 
+padding-right: 7px; 
+vertical-align: middle;
+font-size: 20px;
+}
+#kco-order-review{
+    margin-left: 10px
+}
+#kco-iframe{
+    margin-left: 10px;
+    width: 100% !important;
+    float: none !important;
+}
+#order_comments_field{
+    display: none;
+}
+.checkoutContainerProduct{
+    background-color:#f3f3f3;
+}

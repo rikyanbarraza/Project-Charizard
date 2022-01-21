@@ -3,7 +3,7 @@ html{
 }
 body
 {
-text-align: left;
+
 }
 #sidebar_right
 {
@@ -74,12 +74,12 @@ a {
     font-size: 30px;
     font-weight: 500;
 }
-
-#footerTemp {
-    background-color: black;
-    height: 10vh;
-    width: auto;
+.columns-3 {
+    display: none;
 }
-.footerTemp {
-   
+.woocommerce-result-count{
+    display: none;
+}
+.woocommerce-ordering{
+    display: none;
 }
