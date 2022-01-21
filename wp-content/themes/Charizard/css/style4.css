@@ -65,12 +65,14 @@ ul .product-quantity button {
 	width: 400px !important;
 }
 .cart_totals { /** cart totals width. */
-	float: left;
-	width: 100% !important;
+	width: auto !important;
 }
+.shop_table shop_table_responsive {
+	width: auto ;
+}
+
 .woocommerce-cart-form { /** items width. */
-	display: inline-block;
-	width: calc(100% - 435px);
+	width: auto;
 	padding-right: 35px;
 }
 #containerCart{
@@ -90,9 +92,12 @@ ul .product-quantity button {
 }
 
 .product-thumbnail{
-	width: 150px; 
-	height: 150px; 
+	width: 175px; 
+	height: 175px; 
 	display: inline-block; 
-	padding-right: 7px; 
+	padding-right: 2px; 
 	vertical-align: middle;
+}
+.product-remove {
+	width: 0.1em;
 }

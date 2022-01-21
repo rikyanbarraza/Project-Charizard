@@ -36,3 +36,17 @@ padding-right: 7px;
 vertical-align: middle;
 font-size: 20px;
 }
+#kco-order-review{
+    margin-left: 10px
+}
+#kco-iframe{
+    margin-left: 10px;
+    width: 100% !important;
+    float: none !important;
+}
+#order_comments_field{
+    display: none;
+}
+.checkoutContainerProduct{
+    background-color:#f3f3f3;
+}
