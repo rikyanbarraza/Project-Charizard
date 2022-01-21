@@ -101,3 +101,6 @@ ul .product-quantity button {
 .product-remove {
 	width: 0.1em;
 }
+#”ttr_sidebar” {
+	display: none;
+}
