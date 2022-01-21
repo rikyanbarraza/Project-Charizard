@@ -10,4 +10,14 @@
 </head>
 
 <body>
-    <?php wp_nav_menu( array('theme_location' => 'header-menu') ) ?>
+
+    <header>
+        <div>
+            <div class="center">
+                <a class="center homeLink" style="align-items: unset; align-items:flex-start;" href="<?php $permalink = get_permalink(13); ?>">
+                    <h3 class="text center">Bara Kläder</h3>
+                </a>
+            </div>
+            <?php wp_nav_menu(array('theme_location' => 'header-menu')) ?>
+        </div>
+    </header>

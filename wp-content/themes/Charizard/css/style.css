@@ -1,20 +1,154 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
+.text {
+  color: #222;
+}
+
+.textWhite {
+  color: white;
+}
+
+.deep-black {
+  background-color: #222;
+}
+
+.meny ul,
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* hero section */
 #heroSection {
-    width: 100vw;
-    height: 75vh;
-    background-color: blue;
+  width: 100vw;
+  height: 75vh;
+}
+
+#heroSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgFit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-fullScreen {
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.itemContainerOne {
+  flex-grow: 5;
+}
+
+.itemContainerTwo {
+  flex-grow: 4;
+}
+
+.itemContainerSmall {
+  width: 365px;
+  height: 300px;
+}
+
+.itemContainerMedium {
+  width: 732px;
+  height: 644px;
+  padding-right: 15px;
+}
+
+.sideSection {
+  display: flex;
+  flex-direction: column;
+  height: 644px;
+  justify-content: space-between;
+}
+
+.homeLink {
+  height: 35px;
+  width: 150px;
+}
+
+.btnHover:hover {
+  background-color: #222;
+  color: white;
+}
+
+.menu ul li a {
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  color: white;
+  background-color: black;
+}
+
+.heroButton {
+  position: absolute;
+  top: 70vh;
+  left: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+}
+
+.heroButton h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 666px) {
+  .section-fullScreen {
+    flex-direction: column;
+    height: 120vh;
+  }
+  .itemContainerMedium {
+    width: 365px;
+    height: 300px;
+  }
+  .itemContainerMedium img {
+    width: 365px;
+  }
 }
