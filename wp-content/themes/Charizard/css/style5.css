@@ -25,3 +25,14 @@
 .woocommerce-info::before{
     content:none;
 }
+.woocommerce{
+    font-size: 1.2em;
+}
+.ts-product-image{
+width: 150px; 
+height: 150px; 
+display: inline-block; 
+padding-right: 7px; 
+vertical-align: middle;
+font-size: 20px;
+}

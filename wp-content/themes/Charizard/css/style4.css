@@ -89,3 +89,10 @@ ul .product-quantity button {
 	font-weight: bold;
 }
 
+.product-thumbnail{
+	width: 150px; 
+	height: 150px; 
+	display: inline-block; 
+	padding-right: 7px; 
+	vertical-align: middle;
+}
