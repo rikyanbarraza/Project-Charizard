@@ -39,16 +39,6 @@ a {
   align-items: center;
 }
 
-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 /* hero section */
 #heroSection {
   width: 100vw;
@@ -161,3 +151,28 @@ footer {
 .woocommerce-ordering{
   display: none;
 }
+/* media queries */
+
+/* ----------------------------footer styling---------------------------- */
+
+
+footer:a footer:a:hover footer:a:active footer:a:visited {
+   color: white; 
+  }
+.footerContainer{
+  padding-top: 50px;
+  margin-top: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footerLogoContainer{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
+
+/* ----------------------------footer styling---------------------------- */
