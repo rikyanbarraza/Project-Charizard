@@ -25,26 +25,26 @@ jQuery( function( $ ) {
 
 // --------------- uppdatera varukorg med en knapptryckning------------
 
-Query( function( $ ) {
-	$('.woocommerce').on('change', 'button', function(){
-		$("[name='get_cart_total']").trigger("click");
-	});
-} );
+// Query( function( $ ) {
+// 	$('.woocommerce').on('change', 'button', function(){
+// 		$("[name='get_cart_total']").trigger("click");
+// 	});
+// } );
 
-var timeout;
+// var timeout;
 
-jQuery( function( $ ) {
-	$('.woocommerce').on('change', 'button', function(){
+// jQuery( function( $ ) {
+// 	$('.woocommerce').on('change', 'button', function(){
 
-		if ( timeout !== undefined ) {
-			clearTimeout( timeout );
-		}
+// 		if ( timeout !== undefined ) {
+// 			clearTimeout( timeout );
+// 		}
 
-		timeout = setTimeout(function() {
-			$("[name='get_cart_total']").trigger("click");
-		}, 1000 ); // 1000 står för milisekunder aka 1 min
-	});
-} );
+// 		timeout = setTimeout(function() {
+// 			$("[name='get_cart_total']").trigger("click");
+// 		}, 1000 ); // 1000 står för milisekunder aka 1 min
+// 	});
+// } );
 
 // --------------- uppdatera varukorg med en knapptryckning------------
 
