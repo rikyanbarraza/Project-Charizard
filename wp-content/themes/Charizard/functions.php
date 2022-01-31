@@ -4,20 +4,19 @@
 function add_theme_scripts()
 {
     //header scripts
-    wp_enqueue_style('bootstrap.min', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style('style2', get_template_directory_uri() . '/css/style2.css');
     wp_enqueue_style('style3', get_template_directory_uri() . '/css/style3.css');
     wp_enqueue_style('style4', get_template_directory_uri() . '/css/style4.css');
-	wp_enqueue_style('style5', get_template_directory_uri() . '/css/style5.css');
+	  wp_enqueue_style('style5', get_template_directory_uri() . '/css/style5.css');
+    wp_enqueue_style('style6', get_template_directory_uri() . '/css/style6.css');
     
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 function add_logic_scripts() {
     wp_enqueue_script( 'logic', get_stylesheet_directory_uri() . '/js/logic.js' );
-    wp_enqueue_script( 'bootstrap.min', get_stylesheet_directory_uri() . '/js/bootstrap.min.js' );
-}
+   }
 add_action( 'wp_enqueue_scripts', 'add_logic_scripts' ); 
 
 //visar vilken sida i template hierarkien som man är i(när man är inloggad)
@@ -127,4 +126,20 @@ function ts_product_image_on_checkout( $name, $cart_item, $cart_item_key ) {
     return $image . $name;
 
 }
+// mini cart i headern
+add_filter( 'woocommerce_add_to_cart_fragments', 'header_add_to_cart_fragment', 30, 1 );
+function header_add_to_cart_fragment( $fragments ) {
+    global $woocommerce;
 
+    ob_start();
+
+    ?>
+    <a class="cart-customlocation" href="<?php echo esc_url(wc_get_cart_url()); ?>" 
+    title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+    <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
+     - <?php echo $woocommerce->cart->get_cart_total(); ?></a>
+    <?php
+    $fragments['a.cart-customlocation'] = ob_get_clean();
+
+    return $fragments;
+}

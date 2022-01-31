@@ -10,3 +10,18 @@ text-align: center;
 .product_meta {
     display: none;
 }
+.columns-3 {
+    display: none;
+}
+.woocommerce-result-count{
+    display: none;
+}
+.woocommerce-ordering{
+    display: none;
+}
+.woocommerce-tabs{
+    display: none;
+}
+.wc-tabs-wrapper{
+    display: none;
+}

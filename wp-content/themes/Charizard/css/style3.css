@@ -1,9 +1,10 @@
+/* -------------------------------Produkt sidan----------------------- */
 html{
     margin:0!important;
 }
 body
 {
-
+text-align: center;
 }
 #sidebar_right
 {
@@ -74,12 +75,9 @@ a {
     font-size: 30px;
     font-weight: 500;
 }
-.columns-3 {
-    display: none;
-}
-.woocommerce-result-count{
-    display: none;
-}
-.woocommerce-ordering{
-    display: none;
+.mainContainer{
+    display: flex;
+    max-width: 1000px;
+    margin-left: 25%;
+    margin-right:25%
 }

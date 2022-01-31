@@ -61,9 +61,10 @@
 
 
 </section>
-
-
-
+<div class="cookie-banner" style="display: none">
+	<p>By using our website, you agree to our <a href="<?php echo site_url('/refund_returns') ?>">cookie policy</a></p>
+	<button class="close">&times;</button>
+</div>
 
 <!-- <div>
 
