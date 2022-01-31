@@ -24,9 +24,13 @@
 .woocommerce-info::before{
     content:none;
 }
-.woocommerce{
+ /* ------------------------------------------------------OBS OBS OBS OBS--------------------------------- */
+/* .woocommerce{
     font-size: 1.2em;
-}
+    display: flex;
+    justify-content: space-around;;
+} */
+ /* ------------------------------------------------------OBS OBS OBS OBS--------------------------------- */
 .ts-product-image{
 width: 150px;
 height: 150px;

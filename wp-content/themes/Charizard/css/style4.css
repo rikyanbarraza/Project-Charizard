@@ -76,10 +76,8 @@ ul .product-quantity button {
 	padding-right: 35px;
 }
 #containerCart{
-    background-color: #f3f3f3;
+	background-color: #f3f3f3;
     max-width: 1000px;
-    margin-left: 25%;
-    margin-right: 25%;
 }
 .woocommerce a.button.alt{
 	background-color: #ffffff;
@@ -115,4 +113,7 @@ ul .product-quantity button {
 /* removes banner when removing a cart item */
 .woocommerce-notices-wrapper{
 display:none;
+}
+.product-subtotal{
+	display: none;
 }

@@ -15,7 +15,7 @@
         <div class="burger-container center" id="burger-container">
             <i class="fas fa-bars"></i>
         </div>
-
+        
         <div style="display: none; position:absolute" id="mobileMenu">
             <ul>
                 <li>
@@ -41,7 +41,7 @@
                 </li>
             </ul>
         </div>
-
+        
         <div>
             <div class="center">
                 <a class="center homeLink" style="align-items: unset; align-items:flex-start;" href="https://www.webbstyrka.se/">
@@ -49,5 +49,19 @@
                 </a>
             </div>
             <?php wp_nav_menu(array('theme_location' => 'header-menu')) ?>
+        </div>
+        <div id="cart_container">
+                    <div class="cart_container_border">
+                        <a href="<?php echo wc_get_cart_url(); ?>">
+                            <i class="fas fa-shopping-basket"></i>
+                        </a>
+                        <a class="cart-customlocation" href="
+                        <?php echo wc_get_cart_url(); ?>"
+                         title="<?php _e( 'View your shopping cart' ); ?>">
+                         <?php echo sprintf ( _n( '%d item', '%d items', 
+                         WC()->cart->get_cart_contents_count() ), 
+                         WC()->cart->get_cart_contents_count() ); ?>
+                          - <?php echo WC()->cart->get_cart_total(); ?></a>
+                        </a>
         </div>
     </header>

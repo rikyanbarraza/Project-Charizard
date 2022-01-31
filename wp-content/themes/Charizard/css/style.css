@@ -168,7 +168,7 @@ p {
 .burger-container {
   position: absolute;
   height: 60.44px;
-  right: 5%;
+  left: 5%;
   top: 0%;
   width: 70px;
   cursor: pointer;
@@ -176,8 +176,8 @@ p {
 
 #mobileMenu {
   position: absolute;
-  right: 0%;
-  top: 60px;
+  left: 0%;
+  top: 59px;
   background-color: white;
 }
 
@@ -265,6 +265,9 @@ overflow: hidden
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
+  position: absolute;
+  right: 4%;
+  top: 20px;
 }
 .fa-shopping-basket{
 font-size: large;
