@@ -156,12 +156,13 @@ a {
 /* ----------------------------cart header styling----------------------- */
 
 .cart_container_border{
-display: flex;
 border-style: solid;
-border-color: green;
+border-color: #f3f3f3;
 border-radius: 25px;
-max-width: 90px;
+width: 45px;
+height: 25px;
 align-items: center;
+overflow: hidden
 }
 #cart_container{
   display: flex;
@@ -171,6 +172,10 @@ align-items: center;
 .fa-shopping-basket{
 font-size: large;
 }
+
+/* .woocommerce-Price-amount{
+  display: none !important;
+} */
 /* ----------------------------cart header styling----------------------- */
 
 

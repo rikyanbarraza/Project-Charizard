@@ -18,13 +18,15 @@
                     <h3 class="text center">Bara Kläder</h3>
                 </a>
             </div>
+            <div>
+            
+            </div>
             <div id="cart_container">
                 <div class="cart_container_border">
                     <a href="<?php echo wc_get_cart_url(); ?>">
                         <i class="fas fa-shopping-basket"></i>
                     </a>
-                    <a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-                    <?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+                    <a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
                     </a>
                 </div>
             </div>
