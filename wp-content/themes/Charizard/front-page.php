@@ -6,7 +6,7 @@
         while (have_posts()) {
             the_post();
     ?>
-            <img src="<?php echo get_template_directory_uri() . './images/heroWithHat.jpg' ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/images/heroWithHat.jpg' ?>" alt="">
             <?php /*  the_post_thumbnail(); */ ?>
     <?php
         }
@@ -37,11 +37,13 @@
 
 <section class="center">
     <button class="heroButton btnHover">
-        <h1>Köp Kläder i Ekologisk Bomull</h1>
+        <a href="https://www.webbstyrka.se/ekologiska-klader/">
+            <h1>Köp Ekologiska Kläder</h1>
+        </a>
     </button>
     <div class="section-fullScreen">
         <div class="itemContainerMedium">
-            <img class="imgFit" src="<?php echo get_template_directory_uri() . './images/tjejTshirt.jpg' ?>" alt="">
+            <img class="imgFit" src="<?php echo get_template_directory_uri() . '/images/tjejTshirt.jpg' ?>" alt="ekologiska kläder">
 
         </div>
 
@@ -51,20 +53,19 @@
 
         <div class="sideSection">
             <div class="itemContainerSmall">
-                <img class="imgFit" src="<?php echo get_template_directory_uri() . './images/viktaKlader.jpg' ?>" alt="">
+                <img class="imgFit" src="<?php echo get_template_directory_uri() . '/images/viktaKlader.jpg' ?>" alt="ekologiska kläder">
             </div>
             <div class="itemContainerSmall">
-                <img class="imgFit" src="<?php echo get_template_directory_uri() . './images/snubbeMedSkegg.jpg' ?>" alt="">
+                <img class="imgFit" src="<?php echo get_template_directory_uri() . '/images/snubbeMedSkegg.jpg' ?>" alt="ekologiska kläder">
             </div>
         </div>
     </div>
 
 
 </section>
-<div class="cookie-banner" style="display: none">
-	<p>By using our website, you agree to our <a href="<?php echo site_url('/refund_returns') ?>">cookie policy</a></p>
-	<button class="close">&times;</button>
-</div>
+
+
+
 
 <!-- <div>
 
