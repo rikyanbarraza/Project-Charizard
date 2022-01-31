@@ -52,12 +52,15 @@ font-size: 20px;
 #klarna-checkout-select-other{
     display: none;
 }
+/* woocommerce checkout */
 #kco-order-review{
     margin-left: 1%;
 }
+/* Klarna checkout */
 #kco-iframe{
    margin-right: -1%;
 } 
+/* container klarna&woocommerce checkout */
 #kco-wrapper{
     max-width: 100%;
 }
