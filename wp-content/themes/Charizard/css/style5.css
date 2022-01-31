@@ -40,8 +40,8 @@ font-size: 20px;
 }
 .checkoutContainerProduct{
     background-color: #f3f3f3;
-    overflow: hidden;
-    
+    border:thin;
+    border-color:black;
 }
 #shipping_phone_field {
     display: none;
