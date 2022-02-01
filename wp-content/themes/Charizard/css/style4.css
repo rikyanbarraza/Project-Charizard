@@ -81,6 +81,16 @@ ul .product-quantity button {
     margin-left: 25%;
     margin-right: 25%;
 }
+@media only screen and (max-width: 1150px) {
+#containerCart{
+	background-color: #f3f3f3;
+	margin-left: 5%;
+   	margin-right: 5%;
+}
+.cart_totals {
+
+}
+}
 .woocommerce a.button.alt{
 	background-color: #ffffff;
 	color: black;
