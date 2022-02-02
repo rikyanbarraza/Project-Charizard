@@ -144,3 +144,21 @@ function header_add_to_cart_fragment( $fragments ) {
 
     return $fragments;
 }
+// ändra namn på köp knapparna
+add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );
+ 
+function woo_custom_cart_button_text() {
+ 
+        return __( 'köp nu', 'woocommerce' );
+ 
+}
+// ändra namn på alternativ knapparna
+add_filter( 'woocommerce_product_add_to_cart_text', 'bbloomer_change_select_options_button_text', 9999, 2 );
+ 
+function bbloomer_change_select_options_button_text( $label, $product ) {
+   if ( $product->is_type( 'variable' ) ) {
+      return 'välj alternativ';
+   }
+   return $label;
+}
