@@ -259,7 +259,7 @@ border-radius: 25px;
 width: 45px;
 height: 25px;
 align-items: center;
-overflow: hidden
+overflow: hidden;
 }
 #cart_container{
   display: flex;
