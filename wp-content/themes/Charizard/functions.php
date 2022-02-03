@@ -11,7 +11,6 @@ function add_theme_scripts()
     wp_enqueue_style('style4', get_template_directory_uri() . '/css/style4.css');
 	wp_enqueue_style('style5', get_template_directory_uri() . '/css/style5.css');
     wp_enqueue_style('style6', get_template_directory_uri() . '/css/style6.css');
-    wp_enqueue_style('style7', get_template_directory_uri() . '/css/style7.css');
     
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
@@ -152,7 +151,7 @@ add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text
  
 function woo_custom_cart_button_text() {
  
-        return __( 'köp nu', 'woocommerce' );
+        return __( 'Köp nu', 'woocommerce' );
  
 }
 // ändra namn på alternativ knapparna
@@ -160,7 +159,20 @@ add_filter( 'woocommerce_product_add_to_cart_text', 'bbloomer_change_select_opti
  
 function bbloomer_change_select_options_button_text( $label, $product ) {
    if ( $product->is_type( 'variable' ) ) {
-      return 'välj alternativ';
+      return 'Välj alternativ';
    }
    return $label;
+}
+add_filter('gettext', 'wc_renaming_checkout_total', 20, 3);
+function wc_renaming_checkout_total( $translated_text, $untranslated_text, $domain ) {
+
+    if( !is_admin() && is_checkout ) {
+        if( $untranslated_text == 'Total' )
+            $translated_text = __( 'Total inkl. 25% moms','theme_slug_domain' );
+    }
+    return $translated_text;
+}
+add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+function custom_shipping_package_name( $name ) {
+    return 'Frakt';
 }

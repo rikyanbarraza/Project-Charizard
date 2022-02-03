@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-
 <body>
-
     <header>
         <div class="burger-container center" id="burger-container">
             <i class="fas fa-bars"></i>
@@ -65,3 +62,4 @@
                         </a>
         </div>
     </header>
+    <main>
