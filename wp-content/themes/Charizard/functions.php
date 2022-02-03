@@ -202,31 +202,3 @@ add_filter( 'woocommerce_product_description_heading', 'bbloomer_rename_descript
 function bbloomer_rename_description_tab_heading() {
 return 'Beskrivning';
 }
-// list-style-type: none;
-// display: flex;
-// justify-content: space-evenly;
-// align-items: center;
-// padding-left: 0px;
-
-// @media only screen and (max-width: 1200px) {
-//     body {
-//       margin: 0px;
-//       display: flex;
-//       flex-direction: column;
-//       font-family: "Montserrat", sans-serif;
-//       font-weight: 500;
-//       font-size: 0.92rem;
-//       line-height: 1rem;
-//       min-height: 100vh;
-//     }
-//     @media only screen and (max-width: 800px) {
-//     body {
-//       margin: 0px;
-//       display: flex;
-//       flex-direction: column;
-//       font-family: "Montserrat", sans-serif;
-//       font-weight: 500;
-//       font-size: 0.92rem;
-//       line-height: 1rem;
-//     }
-//     }
