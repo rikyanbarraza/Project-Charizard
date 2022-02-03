@@ -163,15 +163,16 @@ function bbloomer_change_select_options_button_text( $label, $product ) {
    }
    return $label;
 }
-add_filter('gettext', 'wc_renaming_checkout_total', 20, 3);
-function wc_renaming_checkout_total( $translated_text, $untranslated_text, $domain ) {
 
-    if( !is_admin() && is_checkout ) {
-        if( $untranslated_text == 'Total' )
-            $translated_text = __( 'Total inkl. 25% moms','theme_slug_domain' );
-    }
-    return $translated_text;
-}
+// add_filter('gettext', 'wc_renaming_checkout_total', 20, 3);
+// function wc_renaming_checkout_total( $translated_text, $untranslated_text, $domain ) {
+
+//     if( !is_admin() && is_checkout ) {
+//         if( $untranslated_text == 'Total' )
+//             $translated_text = __( 'Total inkl. 25% moms','theme_slug_domain' );
+//     }
+//     return $translated_text;
+// }
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
 function custom_shipping_package_name( $name ) {
     return 'Frakt';
@@ -195,3 +196,37 @@ function woocommerce_custom_product_add_to_cart_text() {
     return __( 'Köp nu', 'woocommerce' );
 
 }
+// Change language on the "description h1"
+add_filter( 'woocommerce_product_description_heading', 'bbloomer_rename_description_tab_heading' );
+ 
+function bbloomer_rename_description_tab_heading() {
+return 'Beskrivning';
+}
+// list-style-type: none;
+// display: flex;
+// justify-content: space-evenly;
+// align-items: center;
+// padding-left: 0px;
+
+// @media only screen and (max-width: 1200px) {
+//     body {
+//       margin: 0px;
+//       display: flex;
+//       flex-direction: column;
+//       font-family: "Montserrat", sans-serif;
+//       font-weight: 500;
+//       font-size: 0.92rem;
+//       line-height: 1rem;
+//       min-height: 100vh;
+//     }
+//     @media only screen and (max-width: 800px) {
+//     body {
+//       margin: 0px;
+//       display: flex;
+//       flex-direction: column;
+//       font-family: "Montserrat", sans-serif;
+//       font-weight: 500;
+//       font-size: 0.92rem;
+//       line-height: 1rem;
+//     }
+//     }

@@ -1,3 +1,4 @@
+<?php wp_footer(); ?>
 <footer class="deep-black">
     <div class="footerContainer">
         <div class="textWhite">
