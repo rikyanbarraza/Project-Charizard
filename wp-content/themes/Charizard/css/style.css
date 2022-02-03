@@ -4,18 +4,17 @@
 
 body {
   margin: 0px;
-  display: flex;
-  flex-direction: column;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1rem;
   min-height: 100vh;
+  background-color:#f3f3f3;
 }
-
 .menu {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
   padding-left: 0px;
 }
 
@@ -148,7 +147,7 @@ footer {
   position: absolute;
   top: 73vh;
   left: 50%;
-  background-color: white;
+  background-color: #f5f5f5;
   color: #222;
   border: none;
   border-radius: 9999px;
@@ -302,6 +301,9 @@ overflow: hidden
 font-size: large;
 }
 
+/* .woocommerce-Price-amount{
+  display: none !important;
+} */
 /* ----------------------------cart header styling----------------------- */
 
 

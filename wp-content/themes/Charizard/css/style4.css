@@ -51,7 +51,7 @@ ul .product-quantity button {
 }
 
 /** cart totals: fixed at right with "sticky". */
-#wrap_all, #content { /** parents need to be "overflow: visible". */
+#wrap_all { /** parents need to be "overflow: visible". */
 	overflow: visible;
 }
 .woocommerce { /** wrapper needs to be flex. */
@@ -138,3 +138,4 @@ display:none;
 .product-subtotal{
 	display: none;
 }
+
