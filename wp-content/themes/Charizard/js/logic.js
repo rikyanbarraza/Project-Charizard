@@ -20,4 +20,4 @@ jQuery( function( $ ) {
 	});
 } );
 // --------------- uppdatera varukorg med en knapptryckning------------
-var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+

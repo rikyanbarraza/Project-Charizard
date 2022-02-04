@@ -5,7 +5,6 @@ function add_theme_scripts()
 {
     //header scripts
     wp_enqueue_style('fontAwesome', get_template_directory_uri() . '/css/all.min.css');
-    // wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
     wp_enqueue_style('style2', get_template_directory_uri() . '/css/style2.css');
     wp_enqueue_style('style3', get_template_directory_uri() . '/css/style3.css');
@@ -18,7 +17,6 @@ add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 function add_logic_scripts() {
     wp_enqueue_script( 'logic', get_stylesheet_directory_uri() . '/js/logic.js' );
-    // wp_enqueue_script( 'bootstrap', get_stylesheet_directory_uri() . '/js/bootstrap.min.js' );
     wp_enqueue_script( 'burgerLogic', get_stylesheet_directory_uri() . '/js/burgerLogic.js' );
    }
 add_action( 'wp_enqueue_scripts', 'add_logic_scripts' ); 

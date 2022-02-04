@@ -11,12 +11,7 @@ body {
   min-height: 100vh;
   background-color:#f3f3f3;
 }
-.menu {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  padding-left: 0px;
-}
+
 
 .text {
   color: #222;
@@ -32,6 +27,13 @@ body {
 
 .deep-black {
   background-color: #222;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
 }
 
 .meny ul,
