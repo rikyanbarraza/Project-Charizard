@@ -47,6 +47,7 @@
             </div>
             <?php wp_nav_menu(array('theme_location' => 'header-menu')) ?>
         </div>
+         <!-- ---------------------Varukorg mini ---------------------------------->
         <div id="cart_container">
                     <div class="cart_container_border">
                         <a href="<?php echo wc_get_cart_url(); ?>">
@@ -61,5 +62,8 @@
                           - <?php echo WC()->cart->get_cart_total(); ?></a>
                         </a>
         </div>
+        <!-- ---------------------Varukorg mini ---------------------------------->
+
+
     </header>
     <main>
