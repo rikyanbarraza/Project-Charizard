@@ -21,12 +21,18 @@ border-left: 1px solid black;
     color: #aaa;
     text-align: center;
 }
-
 .page-title
 {
 font-size: 3em;
-font-family: verdana;
+font-family: "Montserrat", sans-serif;
 font-weight: bold;
+}
+ @media only screen and (max-width: 800px) {
+.page-title {
+	font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2.0rem;
+}
 }
 #main {
     margin-bottom: 50px;
@@ -76,8 +82,63 @@ a {
     font-weight: 500;
 }
 .mainContainer{
-    display: flex;
+   	display: flex;
     max-width: 1000px;
     margin-left: 25%;
-    margin-right:25%
+    margin-right: 25%;
+    flex-direction: column;
+    align-items: center
+}
+@media only screen and (max-width: 700px) {
+  .mainContainer{
+   	display: flex;
+  	max-width: 400px;
+    margin-left: 25%;
+    margin-right: 25%;
+    flex-direction: column;
+    align-items: center
+}
+}
+.single_add_to_cart_button{
+	color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: calc(0.5em + 2px) calc(1em + 2px);
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+form.variations_form.cart{
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center
+}
+td.value{
+	display: flex;
+}
+@media only screen and (max-width: 700px) {
+img.wp-post-image{
+height:290px;
+width: 290px;
+}
+h1.product_title.entry-title{
+font-size:20px;
+	}
+}
+.woocommerce-product-gallery__wrapper{
+	display: flex;
+    justify-content: space-evenly;
+}
+a.reset_variations{
+	display:none;
 }

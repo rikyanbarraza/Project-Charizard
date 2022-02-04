@@ -4,19 +4,14 @@
 
 body {
   margin: 0px;
-  display: flex;
-  flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1rem;
   min-height: 100vh;
+  background-color:#f3f3f3;
 }
 
-.menu ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-left: 0px;
-}
 
 .text {
   color: #222;
@@ -26,8 +21,19 @@ body {
   color: white;
 }
 
+.textWhite a {
+  color: white;
+}
+
 .deep-black {
   background-color: #222;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
 }
 
 .meny ul,
@@ -50,6 +56,11 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.footerGrp {
+	margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* hero section */
@@ -93,6 +104,7 @@ footer {
 
 .itemContainerMedium {
   width: 732px;
+  min-width: 243px;
   height: 644px;
   padding-right: 15px;
 }
@@ -137,7 +149,7 @@ footer {
   position: absolute;
   top: 73vh;
   left: 50%;
-  background-color: white;
+  background-color: #f5f5f5;
   color: #222;
   border: none;
   border-radius: 9999px;
@@ -175,6 +187,7 @@ p {
 }
 
 #mobileMenu {
+  z-index: 1;
   position: absolute;
   left: 0%;
   top: 59px;
@@ -203,6 +216,15 @@ p {
   display: none;
 }
 
+.products {
+	display: none; 
+}
+
+.wc-block-grid__products{
+  margin: 0px;
+}
+
+
 /* media queries */
 
 @media only screen and (max-width: 666px) {
@@ -211,11 +233,14 @@ p {
     height: 120vh;
   }
   .itemContainerMedium {
-    width: 365px;
+    width: 360px;
     height: 300px;
   }
   .itemContainerMedium img {
-    width: 365px;
+    width: 360px;
+  }
+  .itemContainerSmall {
+  	width: 360px 
   }
 }
 
@@ -226,6 +251,13 @@ p {
 
   .burger-container {
     display: flex;
+  }
+  
+  .mainContainer{
+    margin-left: unset;
+    margin-right: unset;
+  	margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -238,7 +270,6 @@ p {
   }
 }
 
-
 .products ul .columns-4 .type-product {
   display: none;
 }
@@ -248,7 +279,6 @@ p {
 .woocommerce-ordering{
   display: none;
 }
-/* media queries */
 
 /* ----------------------------cart header styling----------------------- */
 
@@ -298,20 +328,6 @@ footer:a footer:a:hover footer:a:active footer:a:visited {
   justify-content: space-around;
   flex-direction: row;
 }
-.cookie-banner {
-	position: fixed;
-	bottom: 40px;
-	left: 10%;
-  right: 10%;
-  width: 80%;
-  padding: 5px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #eee;
-  border-radius: 5px;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
 .close {
   height: 20px;
   background-color: #777;
@@ -322,3 +338,8 @@ footer:a footer:a:hover footer:a:active footer:a:visited {
 }
 
 /* ----------------------------footer styling---------------------------- */
+
+/* få bort lägg till som skapas bredvid köp knappen */
+a.added_to_cart.wc-forward {
+    display: none;
+}

@@ -51,7 +51,7 @@ ul .product-quantity button {
 }
 
 /** cart totals: fixed at right with "sticky". */
-#wrap_all, #content { /** parents need to be "overflow: visible". */
+#wrap_all { /** parents need to be "overflow: visible". */
 	overflow: visible;
 }
 .woocommerce { /** wrapper needs to be flex. */
@@ -65,7 +65,19 @@ ul .product-quantity button {
 	width: 400px !important;
 }
 .cart_totals { /** cart totals width. */
-	width: auto !important;
+	width: 100% !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p.woocommerce-shipping-destination{
+	display:flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+a.shipping-calculator-button{
+	color: blue;
+    text-decoration: underline;
 }
 .shop_table shop_table_responsive {
 	width: auto ;
@@ -76,20 +88,32 @@ ul .product-quantity button {
 	padding-right: 35px;
 }
 #containerCart{
-	background-color: #f3f3f3;
+    background-color: #f3f3f3;
     max-width: 1000px;
+    margin-left: 25%;
+    margin-right: 25%
 }
-.woocommerce a.button.alt{
-	background-color: #ffffff;
-	color: black;
-	font-weight: lighter;
-	border-width: 2px;
-	border-style: solid;
-	border-color: darkgray;
+@media only screen and (max-width: 1000px) {
+#containerCart{
+	background-color: #f3f3f3;
+    min-width: 400px;
+    margin: 0;
 }
-.product-name{
-	font-style: Montserrat-bold;
-	font-weight: bold;
+}
+/**köp knapp cart */
+a.checkout-button.button.alt.wc-forward{
+ 	color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.125em;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-align: center !important;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .product-thumbnail{
@@ -101,9 +125,6 @@ ul .product-quantity button {
 }
 .product-remove {
 	width: 0.1em;
-}
-#”ttr_sidebar” {
-	display: none;
 }
 
 .woocommerce button[name="update_cart"],
@@ -117,3 +138,4 @@ display:none;
 .product-subtotal{
 	display: none;
 }
+

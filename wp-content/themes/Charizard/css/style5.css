@@ -24,13 +24,7 @@
 .woocommerce-info::before{
     content:none;
 }
- /* ------------------------------------------------------OBS OBS OBS OBS--------------------------------- */
-/* .woocommerce{
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-around;;
-} */
- /* ------------------------------------------------------OBS OBS OBS OBS--------------------------------- */
+
 .ts-product-image{
 width: 150px;
 height: 150px;
@@ -56,6 +50,10 @@ font-size: 20px;
 #klarna-checkout-select-other{
     display: none;
 }
+.woocommerce-message{
+	display:none;
+}
+
 /* woocommerce checkout */
 #kco-order-review{
     margin-left: 1%;
@@ -67,6 +65,27 @@ font-size: 20px;
 /* container klarna&woocommerce checkout */
 #kco-wrapper{
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+	#kco-wrapper{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+	.ts-product-image{
+	width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding-right: 7px;
+    vertical-align: middle;
+    font-size: 20px;
+	}
 }
 .woocommerce-cart-form{
     width: auto;
@@ -74,4 +93,13 @@ font-size: 20px;
 }
 .actions{
 display:none;
+}
+small.includes_tax{
+	display:none;
+}
+small.woocommerce-price-suffix{
+	display:none;
+}
+th.woocommerce-shipping-totals.shipping{
+	display:none;
 }
